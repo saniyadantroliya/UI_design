@@ -1,0 +1,248 @@
+/* UTILITY COLOR */
+
+:root {
+
+    --Absolute-White: #FFFFFF;
+    --Absolute-Black: #000000;
+
+    --Purple60: #703BF7;
+    --Purple65: #8254F8;
+    --Purple70: #946CF9;
+    --Purple75: #A685FA;
+    --Purple90: #DBCEFD;
+    --Purple95: #EDE7FE;
+    --Purple97: #F4F0FE;
+    --Purple99: #FBFAFF;
+
+    --White90: #E4E4E7;
+    --white95: #F1F1F3;
+    --white97: #F7F7F8;
+    --white99: #FCFCFD;
+
+    --Grey08: #141414;
+    --Grey10: #1A1A1A;
+    --Grey15: #262626;
+    --Grey20: #333333;
+    --Grey30: #4D4D4D;
+    --Grey40: #666666;
+    --Grey50: #808080;
+    --Grey60: #999999;
+}
+
+/* UTILITY FONTS */
+
+@font-face {
+    font-family: 'Urbanist', sans-serif;
+    src: url('path/to/Urbanist-VariableFont_wght.ttf') format('truetype'),
+        url('path/to/Urbanist-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal italic;
+}
+
+/* GLOBEL SELECTORE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    /* background-color: var(--Absolute-Black); */
+    background-color: var(--Grey08);
+    font-family: 'Urbanist', sans-serif;
+    color: var(--Absolute-White);
+
+}
+
+/* LIST-STYLE */
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+/* /LIST-STYLE */
+
+/* BORDER-HR */
+
+.hr {
+    border: 1px solid var(--Grey15);
+}
+
+
+/* PADDING UTILITY(P-1 P-5) */
+.p-1 {
+    padding: 4px;
+}
+
+.p-2 {
+    padding: 8px;
+}
+
+.p-3 {
+    padding: 12px;
+}
+
+.p-4 {
+    padding: 16px;
+}
+
+.p-5 {
+    padding: 20px;
+}
+
+
+/* MARGIN UTILITY(M-1 M-5) */
+
+
+.m-1 {
+    margin: 4px;
+}
+
+.m-2 {
+    margin: 8px;
+}
+
+.m-3 {
+    margin: 16px;
+}
+
+.m-4 {
+    margin: 24px;
+}
+
+.m-5 {
+    margin: 32px;
+}
+
+/* LINK UTILITY */
+a {
+    text-decoration: none;
+    color: var(--Absolute-White);
+    display: inline-block;
+}
+
+/* TEXT DECORATION UTILITY */
+
+.text-decoration {
+    text-decoration: underline;
+}
+
+
+/* BORDER UTILITY */
+
+.border-parent {
+    border-top: 1px solid var(--Grey15);
+    border-bottom: 1px solid var(--Grey15);
+}
+
+.border-left
+{
+    border-left: 1px solid var(--Grey15);
+}
+
+/* BUTTON UTILITY */
+
+.btn {
+    /* display: inline-flex; */
+    background-color: var(--Grey08);
+    border: 1px solid var(--Grey15);
+    padding: 16px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.btn::before {
+    background: #fff;
+    content: "";
+    height: 155px;
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    width: 50px;
+    transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn::after {
+    background: #fff;
+    content: "";
+    height: 20rem;
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 8rem;
+}
+
+.btn::before {
+    left: -50%;
+}
+
+.btn::after {
+    left: -100%;
+}
+
+.btn:hover,
+.btn:active {
+    transform: translateY(-3px);
+    color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover::before {
+    left: 120%;
+    opacity: 0.5s;
+}
+
+.btn:hover::after {
+    left: 200%;
+    opacity: 0.6;
+}
+
+.btn span {
+    z-index: 20;
+}
+
+.btn-secondery {
+    background-color: var(--Grey08);
+    color: var(--Absolute-White);
+}
+
+.btn-primary {
+    background-color: var(--Purple60);
+    color: var(--Absolute-White);
+}
+
+
+
+
+/* DISPLAY UTILITY */
+
+.disply-inline-block {
+    display: inline-block;
+}
+
+.disply-none {
+    display: none;
+}
+
+.disply-flex {
+    display: flex;
+}
+
+/* POSITION UTILITY */
+
+.position-reletive {
+    position: relative;
+}

@@ -1,0 +1,379 @@
+/* MEDIA RESPONSIVE 1200PX */
+
+@media (max-width:1200px) {
+
+
+    .banner-content .tittle h2 {
+        font-size: 24px;
+
+    }
+
+
+    .banner-image .circle-img {
+        top: 15px;
+    }
+
+
+    .banner-image .circle-img img {
+        height: 140px;
+        width: 140px;
+        top: 50px;
+    }
+
+    .details-wrapper {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .property-btn-details .btn {
+        padding: 16px 10px;
+        font-size: 14px;
+    }
+
+
+    .sub-footer-wrapper .sub-footer-content .sub-footer-title h2 {
+        font-size: 28px;
+    }
+
+    .main-footer-wrapper {
+        padding: 80px 20px;
+    }
+
+
+}
+
+/* MEDIA RESPONSIVE 992PX */
+
+@media (max-width:992px) {
+
+    .main-footer-wrapper .footer-wrapper .footer-content span {
+        font-size: 16px;
+    }
+
+    .main-footer-wrapper .footer-wrapper .footer-content li {
+        font-size: 14px;
+    }
+
+    .main-footer-wrapper .footer-wrapper .footer-img {
+        padding-right: 30px;
+    }
+
+
+
+}
+
+
+/* MEDIAN RESPONSIVE 768PX */
+
+@media (max-width:768px) {
+
+    .navbar-nav {
+        position: absolute;
+        top: 115%;
+        flex-direction: column;
+        background-color: var(--Grey08);
+        /* width: 90%; */
+        left: 5%;
+        right: 5%;
+        padding: 20px;
+        align-items: start;
+        border-radius: 5px;
+        border: 1px solid var(--Grey15);
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+
+
+
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .show-navbar {
+        visibility: visible;
+        opacity: 1;
+        z-index: 9999;
+    }
+
+
+    .banner-overview-information .banner-overview-group {
+        flex-wrap: wrap;
+    }
+
+    .banner-overview-information .banner-overview-group .banner-overview-item {
+        flex: 1 1;
+    }
+
+
+
+    .banner-wrapper {
+        flex-direction: column;
+    }
+
+
+    .banner-content {
+        order: 2;
+
+    }
+
+    .banner-image {
+        order: 1;
+        /* padding-bottom: 30px; */
+        position: relative;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    .banner-image .circle-img {
+        z-index: 9;
+        left: 25px;
+        text-align: left;
+        top: unset;
+        bottom: -50px;
+    }
+
+    .banner-image .banner-effect img {
+        border-radius: 20px;
+    }
+
+
+
+    .banner-content .banner-counting-information .banner-counting-group {
+        flex-wrap: wrap;
+    }
+
+    .banner-content .banner-counting-information .banner-counting-group .banner-counting-item {
+        flex: 1 1 auto;
+
+    }
+
+
+
+    .banner-content .tittle h2 {
+        font-size: 28px;
+
+    }
+
+    .banner-content .tittle span {
+
+        font-size: 14px;
+    }
+
+
+
+    .banner-content .banner-button-group {
+        display: inline;
+    }
+
+    .banner-content .banner-button-group .btn {
+        margin: 10px 0 20px 0;
+        text-align: center;
+    }
+
+
+    .banner-content .banner-counting-information {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+
+
+    .banner-content .banner-counting-information .banner-counting-group .banner-counting-item h2 {
+        font-size: 24px;
+    }
+
+
+    .banner-content .banner-counting-information .banner-counting-group .banner-counting-item span {
+        font-size: 14px;
+    }
+
+
+
+
+
+    .details-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .property-details .btn {
+        display: none;
+    }
+
+    .property-tittle .property-details span {
+        margin-right: 0;
+    }
+
+
+    .testimonial-swiper-wrapper .testimonial-title .btn {
+        display: none;
+    }
+
+    .question-details-wrapper .question-title .question-details .btn {
+        display: none;
+    }
+
+
+
+    .swiper-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        width: unset;
+    }
+
+    .swiper-utility .btn {
+        display: block;
+    }
+
+    .swiper-utility .swiper-btn .swiper-pagination-counting {
+        order: 2;
+        margin-right: -30px;
+        padding: 0 10px;
+    }
+
+    .swiper-utility .swiper-btn .button-prev {
+        order: 1;
+        width: 65px;
+        height: 40px;
+    }
+
+    .swiper-utility .swiper-btn .button-next {
+        order: 3;
+        width: 65px;
+        height: 40px;
+    }
+
+
+    .sub-footer-wrapper .sub-footer-img {
+        flex-direction: column;
+    }
+
+    .sub-footer-wrapper .sub-footer-img .left-img {
+        /* transform: rotate(90deg); */
+        transform: scaleY(-1);
+        width: unset;
+        height: 250px;
+    }
+
+    .sub-footer-wrapper .sub-footer-img .right-img {
+        width: unset;
+        height: 250px;
+    }
+
+    .sub-footer-wrapper .sub-footer-content {
+        flex-direction: column;
+    }
+
+    .sub-footer-wrapper .sub-footer-content .sub-footer-title {
+        margin-right: 0;
+        flex: 0;
+    }
+
+    .sub-footer-wrapper .sub-footer-content .sub-footer-btn {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .sub-footer-wrapper .sub-footer-content .sub-footer-btn .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .main-footer-wrapper .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .main-footer-wrapper .footer-wrapper .footer-content {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .main-footer-wrapper .footer-wrapper .send-btn {
+        right: 40px;
+    }
+
+
+    .main-footer-wrapper .footer-wrapper .footer-content span {
+        font-size: 18px;
+    }
+
+    .main-footer-wrapper .footer-wrapper .footer-content li {
+        font-size: 16px;
+    }
+
+    .bottom-footer .bottom-footer-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .bottom-footer .bottom-footer-wrapper .copy-right
+    {
+        margin-top: 10px;
+    }
+
+    .bottom-footer .bottom-footer-wrapper .copy-right span
+    {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+}
+
+
+/* MEADIA RESPONSIVE 575PX */
+
+@media (max-width:575px) {
+
+    .top-bar-wrapper h5 {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .close-icon {
+        max-width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    /* 
+    .banner-content .banner-counting-information .banner-counting-group
+    {
+        flex-wrap: wrap;
+    }
+
+    .banner-content .banner-counting-information .banner-counting-group .banner-counting-item
+    {
+        flex: 1;
+    } */
+
+
+    .banner-overview-information .banner-overview-group {
+        flex-wrap: wrap;
+    }
+
+
+
+
+    .banner-overview-information .banner-overview-group .banner-overview-item {
+        flex: 1 1;
+    }
+
+
+}
