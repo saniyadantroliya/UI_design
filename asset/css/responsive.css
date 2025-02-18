@@ -8,6 +8,47 @@
 
     }
 
+    .banner-overview-information .banner-overview-group .banner-overview-item .banner-overview-tittle h5
+    {
+        font-size: 14px;
+
+    }
+    
+    .property-tittle h2
+    {
+        font-size: 28px;
+    }
+
+    .property-tittle span
+    {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .testimonial-swiper-wrapper .testimonial-title h2
+    {
+        font-size: 28px;
+    }
+
+    .testimonial-swiper-wrapper .testimonial-title .testimonial-details span
+    {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+
+    .question-details-wrapper .question-title h2
+    {
+        font-size: 28px;
+    }
+    
+
+    .question-details-wrapper .question-title .question-details span
+    {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
 
     .banner-image .circle-img {
         top: 15px;
@@ -67,6 +108,7 @@
 
 @media (max-width:768px) {
 
+    
     .navbar-nav {
         position: absolute;
         top: 115%;
@@ -145,7 +187,9 @@
     }
 
     .banner-content .banner-counting-information .banner-counting-group .banner-counting-item {
-        flex: 1 1 auto;
+        /* flex: 1 1 auto; */
+        flex: 1 1 calc(50% - 10px);
+
 
     }
 
@@ -228,12 +272,13 @@
 
     .swiper-utility .btn {
         display: block;
+        margin-top: 10px;
     }
 
     .swiper-utility .swiper-btn .swiper-pagination-counting {
         order: 2;
         margin-right: -30px;
-        padding: 0 10px;
+        padding: 0 0px;
     }
 
     .swiper-utility .swiper-btn .button-prev {
@@ -312,13 +357,11 @@
         flex-direction: column-reverse;
     }
 
-    .bottom-footer .bottom-footer-wrapper .copy-right
-    {
+    .bottom-footer .bottom-footer-wrapper .copy-right {
         margin-top: 10px;
     }
 
-    .bottom-footer .bottom-footer-wrapper .copy-right span
-    {
+    .bottom-footer .bottom-footer-wrapper .copy-right span {
         display: block;
         text-align: center;
         margin-top: 10px;
@@ -336,6 +379,35 @@
 /* MEADIA RESPONSIVE 575PX */
 
 @media (max-width:575px) {
+
+    .nav-bar-wrapper .navbar-brand img {
+
+        height: 30px;
+        width: 100px;
+        
+    }
+
+    .nav-bar-wrapper
+    {
+        padding: 16px 0;
+    }
+
+    .banner-content .tittle h2
+    {
+        font-size: 24px;
+    }
+
+    .banner-content .banner-counting-information .banner-counting-group .banner-counting-item
+    {
+        flex: 1 1 calc(50% - 10px);
+
+    }
+
+
+    .banner-content .banner-counting-information
+    {
+        padding: 40px 10px 40px 20px;
+    }
 
     .top-bar-wrapper h5 {
         font-size: 12px;
@@ -375,5 +447,14 @@
         flex: 1 1;
     }
 
+    .main-footer-wrapper .footer-wrapper .send-btn
+    {
+        right: 17px;
+    }
+
+    .footer-content ul
+    {
+        margin-top: 10px;
+    }
 
 }
